@@ -14,6 +14,15 @@ message CalculatorResponse {
     int32 result = 1;
 }
 
+message DecompositionRequest {
+    int32 a = 1;
+}
+
+message DecompositionResponse {
+    int32 result = 1;
+}
+
 service CalculatorService {
     rpc Calculate (CalculatorRequest) returns (CalculatorResponse);
+    rpc Decompose (DecompositionRequest) returns (stream CalculatorResponse);
 }

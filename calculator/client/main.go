@@ -24,5 +24,6 @@ func main() {
 	c := pb.NewCalculatorServiceClient(conn)
 
 	doCalc(c)
+	doDecomposition(c)
 
 }
