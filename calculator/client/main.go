@@ -25,5 +25,6 @@ func main() {
 
 	doCalc(c)
 	doDecomposition(c)
+	doAverage(c)
 
 }
