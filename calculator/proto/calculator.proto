@@ -34,4 +34,5 @@ service CalculatorService {
     rpc Calculate (CalculatorRequest) returns (CalculatorResponse);
     rpc Decompose (DecompositionRequest) returns (stream CalculatorResponse);
     rpc Average(stream NumberRequest) returns (AverageResponse);
+    rpc Max(stream NumberRequest) returns (stream CalculatorResponse);
 }
